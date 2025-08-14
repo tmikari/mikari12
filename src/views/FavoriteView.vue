@@ -33,7 +33,7 @@ export default {
     this.fetchFavorites()
   },
   methods: {
-    ...mapActions('favorites', ['fetchFavorites']),
+    ...mapActions('favorites', ['loadFavorites']),
   },
 }
 </script>

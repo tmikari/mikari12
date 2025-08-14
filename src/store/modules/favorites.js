@@ -16,7 +16,7 @@ export default {
     ADD_FAVORITE(state, item) { state.list.unshift(item); },
   },
   actions: {
-    async loadFavorites({ commit }) {
+    async fetchFavorites({ commit }) {
       commit('SET_ERROR', '');
       try {
         const res = await axios.get('https://m3h-takiguchi-12.azurewebsites.net/api/SELECT');
